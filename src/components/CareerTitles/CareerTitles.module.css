@@ -1,0 +1,66 @@
+.b {
+    font-family: "Montserrat-Bold";
+    color: #F2753B;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.p {
+    font-family: "Mulish-Semibold";
+    color: #EBAD65;
+    font-size: 9px;
+    margin-top: 6px;
+}
+
+small {
+    font-size: 13px;
+}
+
+@media (orientation: landscape) and (min-width: 2600px) {
+    .b{
+        font-size: 25px;
+    }
+    .small {
+        font-size: 24px;
+    }
+}
+@media (orientation: landscape) and (max-width: 2600px) {
+    .b{
+        font-size: 21px;
+    }
+    .small {
+        font-size: 20px;
+    }
+}
+@media (orientation: landscape) and (max-width: 2150px) {
+    .b{
+        font-size: 18px;
+    }
+    .small {
+        font-size: 17px;
+    }
+}
+@media (orientation: landscape) and (max-width: 1800px) {
+    .b{
+        font-size: 15px;
+    }
+    .small {
+        font-size: 14px;
+    }
+}
+@media (orientation: landscape) and (max-width: 1500px) {
+    .b{
+        font-size: 13px;
+    }
+    .small {
+        font-size: 12px;
+    }
+}
+@media (orientation: landscape) and (max-width: 1200px) {
+    .b{
+        font-size: 9px;
+    }
+    .small {
+        font-size: 8px;
+    }
+}
