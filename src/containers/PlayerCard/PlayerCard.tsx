@@ -1,10 +1,10 @@
-import { Card } from 'primereact/card';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { homeActions } from '../../config/stateSlices/homeSlice';
 import { IPlayer } from '../../shared/models/player.model';
 import { IRootState } from '../../shared/models/rootState.model';
 import PlayerDetails from '../PlayerDetails/PlayerDetails';
+import classes from './PlayerCard.module.css';
 
 const PlayerCard = ({player}:{player:IPlayer}) => {
 
@@ -21,10 +21,28 @@ const PlayerCard = ({player}:{player:IPlayer}) => {
 
     return (
         <React.Fragment>
-            <div onClick={() => fetchPlayerDetails(player.id)}>
-                <Card  title={`${player.firstname} ${player.lastname}`} style={{ width: '25rem', marginBottom: '2em' }}>
-                    
-                </Card>
+            <div className={classes.card} onClick={() => fetchPlayerDetails(player.id)}>
+                <div className={classes['image-div']}>
+                    <img src={player.picture} alt="Tennis Player" className={classes.image} />
+                </div>
+                <div className={classes.title} >
+                    <h2 className={classes.h2}>{player.firstname} {player.lastname}</h2>
+                </div>
+                
+                <div className={classes.info}>
+                    <div>
+                        <h3 className={classes.h3}>RANK</h3>
+                        <p className={classes.p}>#{player.data?.rank}</p>
+                    </div>
+                    <div>
+                        <h3 className={classes.h3}>POINTS</h3>
+                        <p className={classes.p}>{player.data?.points}</p>
+                    </div>
+                    <div>
+                        <h3 className={classes.h3}>COUNTRY</h3>
+                        <p className={classes.p}>{player.country?.code}</p>
+                    </div>
+                </div>
             </div>
             <PlayerDetails player={playerSelected}/>
         </React.Fragment>
