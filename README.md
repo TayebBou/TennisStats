@@ -1,6 +1,41 @@
-# Getting Started with TennisStats
+# TennisStats
 
-Web site that displays tennis player statistics with RactJS.
+# LIVE HERE : https://tennisstats-pro.web.app
+
+TennisStats is a website that displays tennis player statistics with React JS / TypeScript / Redux Toolkit / CRA / Cypress / Prime React / CSS / Axios / Firebase / ESLint.
+
+All screen size are handled except for extra small screen size.
+For the deployement I built the project with the `yarn build` commande and I deployed with Firebase, here the documentation for hosting and deploying your app in Firebase : https://firebase.google.com/docs/hosting/quickstart.
+
+![Capture](https://user-images.githubusercontent.com/52780772/160375617-231ebb8a-ab4f-451d-8e56-2936f29295d9.PNG)
+
+## How to run
+
+### Install Node.js plateform
+
+( Choose the LTS version recommanded for most users )
+
+In the project directory, you can run:
+
+### `npm install --global yarn`
+
+to install the yarn package it's a better alternative of npm.
+
+### `yarn install`
+
+To install all dependencies.
+
+### `yarn start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### You can start using the application with all its features :)
+
+![Capdfture](https://user-images.githubusercontent.com/52780772/160376469-f774ca86-f6ad-4575-8ede-b41942a49b20.PNG)
 
 ## Available Scripts
 
@@ -24,6 +59,10 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 To Launche the cypress desktop app built with Electron but before you need to have the app started with "yarn start" in an other terminal.
 
 ### `yarn build`
+
+Before build you need to install **cross-env** dependency : 
+
+### `yarn global add cross-env`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
