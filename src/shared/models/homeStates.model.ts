@@ -4,5 +4,6 @@ export interface IHomeStates {
     players: Array<IPlayer>,
     error: string | null,
     visible: boolean,
-    playerSelected: IPlayer
+    playerSelected: IPlayer,
+    matchedPlayers: Array<IPlayer>
 }

@@ -8,7 +8,8 @@ const initialHomeState: IHomeStates = {
     players: [],
     error: null,
     visible: false,
-    playerSelected: {}
+    playerSelected: {},
+    matchedPlayers: []
 }
 
 const homeSlice = createSlice({
@@ -22,12 +23,16 @@ const homeSlice = createSlice({
             const playersArray = action.payload;
             const rankedPlayersArray = [...playersArray].sort((a,b) => a.data.rank - b.data.rank);
             state.players = rankedPlayersArray;
+            state.matchedPlayers = rankedPlayersArray;
         },
         setVisible(state:IHomeStates, action) {
             state.visible = action.payload;
         },
         setPlayerSelected(state:IHomeStates, action) {
             state.playerSelected = action.payload;
+        },
+        setMatchedPlayers(state:IHomeStates, action) {
+            state.matchedPlayers = action.payload;
         }
     }
 })

@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './config/store';
+import './assets/fonts/Montserrat/Montserrat-Bold.ttf';
+import './assets/fonts/Mulish/Mulish-Bold.ttf';
+import './assets/fonts/Mulish/Mulish-SemiBold.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

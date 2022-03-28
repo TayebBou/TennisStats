@@ -5,7 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: overlay;
 }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: local("Montserrat-Bold"),
+   url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  }
+@font-face {
+  font-family: "Mulish-Bold";
+  src: local("Mulish-Bold"),
+   url("./assets/fonts/Mulish/Mulish-Bold.ttf") format("truetype");
+  }
+@font-face {
+  font-family: "Mulish-SemiBold";
+  src: local("Mulish-SemiBold"),
+   url("./assets/fonts/Mulish/Mulish-SemiBold.ttf") format("truetype");
+  }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -15,4 +32,14 @@ code {
 #root {
   height: 100%;
   width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.301);
+  border-radius: 10px;
 }
