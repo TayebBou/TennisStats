@@ -58,3 +58,39 @@
         font-size: 12px !important;
     }
 }
+@media (orientation: landscape) and (max-width: 940px) {
+    .p-inputtext	{
+        font-size: 11px !important;
+    }
+}
+@media (orientation: landscape) and (max-width: 800px) {
+    .p-inputtext	{
+        font-size: 9.5px !important;
+    }
+}
+@media (orientation: landscape) and (max-width: 650px) {
+    .p-inputtext	{
+        font-size: 8.5px !important;
+    }
+}
+@media (orientation: landscape) and (max-width: 550px) {
+    .p-inputtext	{
+        font-size: 7.3px !important;
+    }
+}
+@media (orientation: landscape) and (max-width: 450px) {
+    .p-inputtext	{
+        font-size: 6px !important;
+    }
+}
+@media (orientation: landscape) and (max-width: 350px) {
+    .p-inputtext	{
+        font-size: 5px !important;
+    }
+}
+@media (orientation: portrait) {
+    .p-inputtext	{
+        font-size: 2vw !important;
+        height: 6.5vw !important;
+    }
+}
