@@ -45,3 +45,15 @@
         width: 53%;
     }
 }
+@media (orientation: portrait) {
+    .content {
+        margin: auto;
+        width: 85%;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+        padding-top: 15%;
+    }
+    .main {
+        background-position: 65% 68%;
+    }
+}
