@@ -5,6 +5,7 @@
 TennisStats is a website that displays tennis player statistics with React JS / TypeScript / Redux Toolkit / CRA / Cypress / Prime React / CSS / Axios / Firebase / ESLint.
 
 All screen size are handled.
+
 For the deployement I built the project with the `yarn build` commande and I deployed with Firebase, here the documentation for hosting and deploying your app in Firebase : https://firebase.google.com/docs/hosting/quickstart.
 
 ![Capture](https://user-images.githubusercontent.com/52780772/160375617-231ebb8a-ab4f-451d-8e56-2936f29295d9.PNG)
