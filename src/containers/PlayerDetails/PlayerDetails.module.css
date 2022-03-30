@@ -25,7 +25,7 @@
     bottom: 0px;
     height: 100vh;
     width: 40vw;
-    object-position: 0% 100%;
+    object-position: 40% 100%;
     object-fit: contain;
     filter: drop-shadow(5px 17px 35px #222) !important;
 }
@@ -47,6 +47,7 @@
     bottom: 5px;
     position: relative;
     color: #F2753B;
+    margin-top: calc( 54 * 14vw/100) !important;
     margin: 14vh 1vw 6vh 17vw;
     display: inline-block;
 }
@@ -57,7 +58,7 @@
     position: absolute;
     bottom: 127px;
     left: 2px;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 0.23vw;
     -webkit-text-stroke-color: #f2753b;
 }
 
@@ -197,19 +198,64 @@
 }
 @media (orientation: landscape) and (max-width: 1040px) {
     .image {
-        left: -128px;
-        width: 422px;
+        left: -10vw;
+        width: 40vw;
         height: 85vh;
     }
     .b {
-        bottom: 76px;
+        bottom: 8.5vw;
     }
     .h3 {
-        font-size: 10px;
-        margin-top: 20px;
+        font-size: 1.5vw;
+        margin-top: 1vw;
     }
     .p {
-        font-size: 9px;
-        margin-top: 2px;
+        font-size: 1.3vw;
+        margin-top: 1vw;
+    }
+}
+@media (orientation: portrait) {
+    .content {
+        height: 60vh;
+        padding-left: 4vw !important;
+        padding-right: 4vw !important;
+    }
+    .h2 {
+        margin: 14vh 1vw 3vh 0vw;
+        padding-top: 10vw;
+    }
+    .dialog {
+        width: 90% !important;
+    }
+    .modal {
+        margin-left: 0vw;
+    }
+    .image {
+        z-index: -2;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        bottom: 49vh;
+        right: 0;
+        width: 80vw;
+        height: 48vh;
+        filter: none !important;
+        object-position: 50% 100% !important;
+        object-fit: contain;
+    }
+    .b {
+        bottom: 10vw;
+    }
+    .h3 {
+        font-size: 2.35vw;
+        margin-top: 3vw;
+    }
+    .p {
+        font-size: 2vw;
+        margin-top: 1.5vw;
+    }
+    .country-image {
+        margin-top: 10vw;
+        box-shadow: 0 0 3vh -1.5vw rgb(0 0 0 / 50%);
     }
 }
