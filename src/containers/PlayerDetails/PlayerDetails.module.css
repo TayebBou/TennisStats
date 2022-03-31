@@ -88,6 +88,20 @@
     grid-column-end: 4;
 }
 
+.close {
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    width: 5vw;
+    right: 0;
+    padding-bottom: 2vh;
+    bottom: 85vh;
+    left: 0;
+    font-size: 10vh !important;
+    color: white;
+    cursor: pointer;
+}
+
 @media (orientation: landscape) and (min-width: 2600px) {
     .image {
         left: -135px;
@@ -257,5 +271,14 @@
     .country-image {
         margin-top: 10vw;
         box-shadow: 0 0 3vh -1.5vw rgb(0 0 0 / 50%);
+    }
+    .close {
+        margin: unset;
+        width: 5vw;
+        right: 5vw;
+        padding-bottom: 2vw;
+        bottom: 60vh;
+        left: unset;
+        font-size: 10vw !important;
     }
 }
