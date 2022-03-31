@@ -13,11 +13,15 @@ const SearchPlayer = () => {
 
     const handleSearchPlayer = (event: ChangeEvent<HTMLInputElement>) => {
         if(event.target.value === '') {
+            // get all players if input empty
             dispatch(homeActions.setMatchedPlayers(players));
         } else {
+            // get matched players if input not empty
             dispatch(homeActions.setMatchedPlayers(players.filter(({firstname, lastname}:IPlayer) => {
                 const fullName = firstname?.toLowerCase() + " " + lastname?.toLowerCase();
-                return fullName.startsWith(event.target.value.toLowerCase());
+                const revertFullName = lastname?.toLowerCase() + " " + firstname?.toLowerCase();
+                return fullName.startsWith(event.target.value.toLowerCase())
+                         || revertFullName.startsWith(event.target.value.toLowerCase());
             } )));
         }
     }
