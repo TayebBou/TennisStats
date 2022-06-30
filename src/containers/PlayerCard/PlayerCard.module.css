@@ -7,6 +7,11 @@
     grid-template-columns: 40% 1fr;
     grid-template-rows: 40% 1fr;
     box-shadow: 0 0 4.5vh -10px rgb(0 0 0 / 50%);
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .image-div {

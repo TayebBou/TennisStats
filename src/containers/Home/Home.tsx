@@ -7,11 +7,13 @@ import ModalError from "../../components/ModalError/ModalError";
 import { IRootState } from "../../shared/models/rootState.model";
 import { IPlayer } from "../../shared/models/player.model";
 import SearchPlayer from "../SearchPlayer/SearchPlayer";
+import PlayerDetails from "../PlayerDetails/PlayerDetails";
 
 const Home = () => {
 
     const error = useSelector((state:IRootState) => state.home.error);
     const matchedPlayers = useSelector((state:IRootState) => state.home.matchedPlayers);
+    const playerSelected = useSelector((state: IRootState) => state.home.playerSelected);
     const dispatch = useDispatch();
 
     const playersCards = matchedPlayers.map((player: IPlayer) => {
@@ -38,6 +40,7 @@ const Home = () => {
                     {playersCards}
                 </div>
             </div>
+            <PlayerDetails player={playerSelected}/>
         </React.Fragment>
     )
 }
