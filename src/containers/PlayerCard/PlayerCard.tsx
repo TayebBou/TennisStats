@@ -3,13 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { homeActions } from '../../config/stateSlices/homeSlice';
 import { IPlayer } from '../../shared/models/player.model';
 import { IRootState } from '../../shared/models/rootState.model';
-import PlayerDetails from '../PlayerDetails/PlayerDetails';
 import classes from './PlayerCard.module.css';
 
 const PlayerCard = ({player}:{player:IPlayer}) => {
 
     const players = useSelector((state: IRootState) => state.home.players);
-    const playerSelected = useSelector((state: IRootState) => state.home.playerSelected);
     const dispatch = useDispatch();
 
 
@@ -44,7 +42,7 @@ const PlayerCard = ({player}:{player:IPlayer}) => {
                     </div>
                 </div>
             </div>
-            <PlayerDetails player={playerSelected}/>
+            
         </React.Fragment>
     )
 }
